@@ -103,28 +103,3 @@ CREATE INDEX idx_scan_lang_stats_scan_id ON scan_lang_stats(scan_id);
 CREATE INDEX idx_scan_lang_stats_language ON scan_lang_stats(language);
 CREATE INDEX idx_system_logs_level ON system_logs(level);
 CREATE INDEX idx_system_logs_created_at ON system_logs(created_at);
-
--- 9. 초기 설정 데이터
-INSERT IGNORE INTO settings (`key`, `value`, `type`, `description`) VALUES
-('app_version', '1.0.0', 'string', 'Application version'),
-('last_backup', NULL, 'string', 'Last database backup timestamp'),
-('cpp_engine_path', './cpp_engine/build/loc_scanner_engine', 'string', 'Path to C++ LOC scanner engine'),
-('default_scan_engine', 'hybrid', 'string', 'Default scanning engine (hybrid, cpp, php)'),
-('max_scan_timeout', '300', 'number', 'Maximum scan timeout in seconds'),
-('enable_detailed_logging', 'true', 'boolean', 'Enable detailed system logging');
-
--- 10. 샘플 OS 데이터
-INSERT IGNORE INTO oses (id, name, version, arch, hostname, ip_address, access_level, description, status) VALUES
-(1, 'macOS', 'Monterey', 'ARM64', 'MacBook-Pro-M1', '192.168.1.100', 'admin', 'Development MacBook Pro with M1 chip', 'active'),
-(2, 'macOS', 'Big Sur', 'x86_64', 'iMac-Intel', '192.168.1.101', 'user', 'Intel-based iMac for testing', 'active'),
-(3, 'Windows', '11', 'x86_64', 'WIN-DEV-01', '192.168.1.102', 'user', 'Windows development machine', 'active'),
-(4, 'Ubuntu', '20.04', 'x86_64', 'ubuntu-server', '192.168.1.103', 'admin', 'Ubuntu server for production', 'active'),
-(5, 'CentOS', '8', 'x86_64', 'centos-web', '192.168.1.104', 'user', 'CentOS web server', 'inactive');
-
--- 11. 샘플 에이전트 데이터
-INSERT IGNORE INTO agents (id, name, version, os_id, notes) VALUES
-(1, 'VS Code', '1.74.0', 1, 'Primary development environment'),
-(2, 'Git', '2.39.0', 1, 'Version control system'),
-(3, 'Docker', '20.10.21', 1, 'Container platform'),
-(4, 'Node.js', '18.12.1', 1, 'JavaScript runtime'),
-(5, 'PHP', '8.2.0', 1, 'PHP interpreter');

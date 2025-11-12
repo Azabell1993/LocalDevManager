@@ -60,6 +60,16 @@ chmod +x install.sh
 ./install.sh
 ```
 
+### MySQL root 계정 문제 해결
+
+만약 root DB 계정으로 연결이 되지 않거나 권한 오류가 발생한다면 아래 명령어로 root 비밀번호를 재설정하세요:
+
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
 **스마트 설치 시스템:**
 - **기존 설치 자동 감지**: .env 파일, 데이터베이스, 테이블 상태 확인
 - **선택적 설치 옵션**:
