@@ -1,0 +1,88 @@
+# 환경 설정 파일
+.env
+.env.local
+.env.production
+.env.staging
+
+# 데이터베이스 파일
+*.sqlite
+*.sqlite3
+*.db
+app/Core/Db.php
+storage/*.sqlite*
+
+# 로그 파일
+*.log
+logs/
+storage/logs/
+
+# 캐시 파일
+storage/cache/
+storage/temp/
+
+# 백업 파일
+storage/backups/
+*.backup
+*.bak
+
+# 미디어 파일
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# IDE/Editor
+.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# PHP
+vendor/
+composer.lock
+.phpunit.result.cache
+
+# C++ 빌드 파일
+cpp_engine/build/
+cpp_engine/*.o
+cpp_engine/*.exe
+cpp_engine/loc_scanner_engine
+
+# Node.js (필요한 경우)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 임시 파일
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 테스트 출력
+coverage/
+.phpunit.cache/
+
+# 개발용 테스트 파일
+test_*.php
+debug_*.php
+temp_*.php
