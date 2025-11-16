@@ -1,4 +1,4 @@
-# LocalDevManager - 사실 개발 관리 프로그램
+# LocalDevManager - 사설 개발 관리 프로그램
 
 > **빠른 시작:** MySQL 데이터베이스 설정 → `./install.sh` 실행 → http://localhost:8081 접속
 
