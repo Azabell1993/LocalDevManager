@@ -412,7 +412,7 @@ class DevManager {
 
     // 프로젝트 관련 메소드들
     openVsCode(projectId, projectPath) {
-        this.showAlert('info', 'VS Code를 실행 중입니다...', 2000);
+        this.showAlert('VS Code를 실행 중입니다...', 'info', 2000);
         
         fetch(`/ajax/projects/${projectId}/open-vscode`, {
             method: 'POST',
@@ -423,19 +423,19 @@ class DevManager {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                this.showAlert('success', `VS Code가 성공적으로 열렸습니다: ${projectPath}`);
+                this.showAlert(`VS Code가 성공적으로 열렸습니다: ${projectPath}`, 'success');
             } else {
-                this.showAlert('error', `VS Code 실행 실패: ${data.message}`);
+                this.showAlert(`VS Code 실행 실패: ${data.message}`, 'error');
             }
         })
         .catch(error => {
             console.error('VS Code 실행 오류:', error);
-            this.showAlert('error', 'VS Code 실행 중 오류가 발생했습니다.');
+            this.showAlert('VS Code 실행 중 오류가 발생했습니다.', 'error');
         });
     }
 
     openExplorer(projectPath) {
-        this.showAlert('info', 'Finder를 여는 중입니다...', 2000);
+        this.showAlert('Finder를 여는 중입니다...', 'info', 2000);
         
         fetch('/ajax/projects/open-explorer', {
             method: 'POST',

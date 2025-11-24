@@ -110,7 +110,7 @@
                     <div class="mb-3">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="is_active" name="is_active" value="1" 
-                                   <?= ($agent['is_active']) ? 'checked' : '' ?>>
+                                   <?= (!empty($agent['is_active'])) ? 'checked' : '' ?>>
                             <label class="form-check-label" for="is_active">
                                 Active Agent
                             </label>
