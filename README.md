@@ -1,4 +1,4 @@
-# LocalDevManager - 사실 개발 관리 프로그램
+# LocalDevManager - 사설 개발 관리 프로그램
 
 > **빠른 시작:** MySQL 데이터베이스 설정 → `./install.sh` 실행 → http://localhost:8081 접속
 
@@ -6,6 +6,27 @@
 
 이 프로그램은 로컬 개발 환경에서 프로젝트를 관리하고, 코드 라인 수를 스캔하며, OS와 에이전트 정보를 관리하는 특수 도구입니다.
 
+<img width="3824" height="2221" alt="image" src="https://github.com/user-attachments/assets/55f69bc7-d2cd-4528-986e-8121004cff61" />  
+
+<img width="3827" height="2120" alt="image" src="https://github.com/user-attachments/assets/5801c3d2-9fde-4da3-b993-cac73fee6c24" />  
+
+<img width="3819" height="1134" alt="image" src="https://github.com/user-attachments/assets/c76cde2e-3b9e-4279-aa8f-d0c120fdb61f" />  
+
+<img width="3819" height="1134" alt="image" src="https://github.com/user-attachments/assets/dbf68bec-3655-429b-bcef-b943144e7f34" />  
+
+<img width="3800" height="2113" alt="image" src="https://github.com/user-attachments/assets/818fce7d-f50a-4669-9d70-52ef47d80879" />  
+  
+<img width="3802" height="1325" alt="image" src="https://github.com/user-attachments/assets/52f75008-7ec4-469b-a624-6a25f318e5df" />  
+
+<img width="3802" height="1136" alt="image" src="https://github.com/user-attachments/assets/03f65f5a-78f1-491a-9d9c-be8cbf84e686" />  
+
+<img width="3802" height="1367" alt="image" src="https://github.com/user-attachments/assets/129314e0-9bbd-4b01-a033-175943bbf604" />  
+
+<img width="3779" height="1698" alt="image" src="https://github.com/user-attachments/assets/bb0eb895-faff-426b-baf0-67ad0cd187ed" />  
+
+<img width="3834" height="2114" alt="image" src="https://github.com/user-attachments/assets/95b0c106-1a24-434b-9fae-d824675783d7" />  
+
+  
 ## 설치 전 준비사항
 
 1. **MySQL 서버 실행 확인**
