@@ -5,13 +5,6 @@
     </a>
 </div>
 
-<?php if (isset($_SESSION['success'])): ?>
-    <div class="alert alert-success alert-dismissible">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <?= htmlspecialchars($_SESSION['success']) ?>
-    </div>
-<?php endif; ?>
-
 <?php if (isset($_SESSION['error'])): ?>
     <div class="alert alert-danger alert-dismissible">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
