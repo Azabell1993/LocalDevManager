@@ -6,7 +6,16 @@
 
 이 프로그램은 로컬 개발 환경에서 프로젝트를 관리하고, 코드 라인 수를 스캔하며, OS와 에이전트 정보를 관리하는 특수 도구입니다.
 
-[![YouTube Demo](https://img.youtube.com/vi/W5ggB3PMyCI/0.jpg)](https://youtu.be/W5ggB3PMyCI)
+<p align="center">
+   <a href="https://youtu.be/W5ggB3PMyCI" target="_blank">
+      <img src="https://img.shields.io/badge/YouTube-바로가기-red?logo=youtube" alt="YouTube 바로가기" style="margin-bottom:8px;">
+   </a>
+</p>
+<p align="center">
+   <a href="https://youtu.be/W5ggB3PMyCI" target="_blank">
+      <img src="https://img.youtube.com/vi/W5ggB3PMyCI/0.jpg" alt="YouTube Demo" width="600">
+   </a>
+</p>
 
 
 <img width="3824" height="2221" alt="image" src="https://github.com/user-attachments/assets/55f69bc7-d2cd-4528-986e-8121004cff61" />  
