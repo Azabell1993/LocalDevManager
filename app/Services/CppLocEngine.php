@@ -10,7 +10,7 @@ class CppLocEngine
     
     public function __construct()
     {
-        $this->enginePath = dirname(__DIR__) . '/cpp_engine/build/loc_scanner_engine';
+        $this->enginePath = dirname(dirname(__DIR__)) . '/cpp_engine/build/loc_scanner_engine';
         $this->checkEngine();
     }
     
@@ -30,7 +30,7 @@ class CppLocEngine
     
     public function buildEngine()
     {
-        $cppDir = dirname($this->enginePath);
+        $cppDir = dirname(dirname($this->enginePath));
         $output = [];
         $returnCode = 0;
         
